@@ -6,7 +6,7 @@ export interface DecodeResult {
   extractedExt?: string;
   extractedData?: Uint8Array;
   extractedSize?: number;
-  extraData?: ExtraData | null;
+  extraData?: DecodedExtraData | null;
   error?: string;
   timestamp?: string;
 }
@@ -14,6 +14,12 @@ export interface DecodeResult {
 export interface ExtraData {
   ext: string;
   data: Uint8Array;
+}
+
+/** 解析后的附加数据（如二维码） */
+export interface DecodedExtraData {
+  type: string;
+  content: string;
 }
 
 export interface NestedPayload {

@@ -225,16 +225,22 @@ async function decodeDuck(base64: string) {
             { password: "" },
             `image_${fillStr}.png`,
         );
+
         if (!result.success || !result.extractedData) {
             throw new Error(result.error ?? "解密失败");
         }
+
+        // 用 extractedExt 构造真正的下载文件名和 MIME 类型
+        const ext = result.extractedExt ?? ".bin";
+        const downloadFileName = `duck_${fillStr}${ext}`;
+
         const blob = new Blob([result.extractedData], {
-            type: getMimeTypeFromFileName(result.fileName),
+            type: getMimeTypeFromFileName(downloadFileName),
         });
         const url = URL.createObjectURL(blob);
         const link = document.createElement("a");
         link.href = url;
-        link.download = result.fileName;
+        link.download = downloadFileName;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

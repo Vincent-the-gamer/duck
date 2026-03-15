@@ -49,33 +49,34 @@ async function getRgbBytes(file: File, options: DecodeOptions = {}): Promise<Uin
 /**
  * 处理解码结果，包括 binpng 转换和扩展名处理
  */
-function processExtractedData(
-  ext: string,
-  data: Uint8Array
-): { ext: string; data: Uint8Array } {
-  let processedExt = ext;
-  let processedData = data;
+ async function processExtractedData(
+   ext: string,
+   data: Uint8Array
+ ): Promise<{ ext: string; data: Uint8Array }> {
+   let processedExt = ext;
+   let processedData = data;
 
-  if (!processedExt.startsWith('.')) {
-    processedExt = '.' + processedExt;
-  }
+   if (!processedExt.startsWith('.')) {
+     processedExt = '.' + processedExt;
+   }
 
-  if (processedExt.toLowerCase().endsWith('.binpng')) {
-    try {
-      processedData = convertBinPngToBytes(data);
-      const newExt = processedExt.slice(0, -7);
-      if (newExt && newExt !== '.') {
-        processedExt = newExt;
-      } else {
-        processedExt = '.mp4';
-      }
-    } catch (e) {
-      // 保持原始数据
-    }
-  }
+   if (processedExt.toLowerCase().endsWith('.binpng')) {
+     try {
+       processedData = await convertBinPngToBytes(data);  // ← 加上 await
+       const newExt = processedExt.slice(0, -7);
+       if (newExt && newExt !== '.') {
+         processedExt = newExt;
+       } else {
+         processedExt = '.mp4';
+       }
+     } catch (e) {
+       // 保持原始数据
+     }
+   }
 
-  return { ext: processedExt, data: processedData };
-}
+   return { ext: processedExt, data: processedData };
+ }
+
 
 /**
  * 主解密函数 - 从图片中提取隐藏数据
@@ -123,7 +124,7 @@ export async function decryptDuckImage(
     let { ext, data, extraData } = result;
 
     // 处理主数据
-    const processed = processExtractedData(ext, data);
+    const processed = await processExtractedData(ext, data);
     ext = processed.ext;
     data = processed.data;
 
