@@ -1,0 +1,9 @@
+{
+  "name": "duck",
+  "description": "Reverse engineering of the duck image web app from SS_Tools",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "Vincent-the-gamer",
+  "license": "MIT",
+  "packageManager": "pnpm@10.32.1"
+}
