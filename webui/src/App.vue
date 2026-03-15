@@ -10,6 +10,14 @@
                 </div>
             </div>
 
+            <p>
+                <a
+                    href="https://github.com/Vincent-the-gamer/duck"
+                    target="_blank"
+                    >GitHub</a
+                >
+            </p>
+
             <!-- Upload Zone -->
             <div
                 class="upload-zone"
@@ -248,6 +256,14 @@ const clearImage = () => {
 </script>
 
 <style scoped>
+a {
+    color: var(--accent);
+    text-decoration: none;
+    &:hover {
+        color: deeppink;
+    }
+}
+
 .page {
     min-height: 100svh;
     display: flex;
