@@ -5,7 +5,7 @@
 import {
   encodeToDuckImage,
   createPixelData,
-} from "encoder/src/encoder";
+} from "duck-encoder/src/encoder";
 import { drawDuck, getRgbaFromCanvas } from "./duck-canvas";
 
 export interface BrowserEncodeOptions {

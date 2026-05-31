@@ -1,4 +1,4 @@
-import { sha256 } from "decoder/utils/crypto";
+import { sha256 } from "duck-decoder/utils/crypto";
 
 /**
  * Generate an XOR key stream from password + salt.

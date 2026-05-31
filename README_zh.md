@@ -21,7 +21,15 @@
 
 ## 使用
 
-使用网页版即可：https://duck.vince-g.xyz
+### 网页
+
+https://duck.vince-g.xyz
+
+### 命令行
+
+```bash
+npx @vince-gamer/duck-cli -h
+```
 
 ## 预览
 

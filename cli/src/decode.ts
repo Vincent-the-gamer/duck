@@ -5,7 +5,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import sharp from "sharp";
-import { tryExtract } from "decoder/core";
+import { tryExtract } from "duck-decoder/core";
 
 export interface DecodeActionOptions {
   password?: string;

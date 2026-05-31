@@ -87,7 +87,7 @@
 <script setup lang="ts">
 import { ref, onUnmounted } from "vue";
 import { useI18n } from "vue-i18n";
-import { decryptDuckImageFromBase64 } from "decoder";
+import { decryptDuckImageFromBase64 } from "duck-decoder";
 import { getMimeTypeFromFileName } from "../utils/mimetype";
 import { randomString } from "../utils/string";
 

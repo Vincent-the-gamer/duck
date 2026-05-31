@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "decoder": "workspace:*",
-    "encoder": "workspace:*",
+    "duck-decoder": "workspace:*",
+    "duck-encoder": "workspace:*",
     "vue": "^3.5.30",
     "vue-i18n": "^9.14.4",
     "vue-router": "^4.6.4"

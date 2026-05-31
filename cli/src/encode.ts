@@ -4,7 +4,7 @@
 
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve, extname } from "node:path";
-import { encodeDuckPng } from "encoder";
+import { encodeDuckPng } from "duck-encoder";
 
 export interface EncodeActionOptions {
   password?: string;
