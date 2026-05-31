@@ -3,9 +3,29 @@
   "version": "1.0.0",
   "type": "module",
   "description": "",
-  "main": "index.ts",
+  "main": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.mts"
+    },
+    "./core": {
+      "import": "./dist/core/index.mjs",
+      "types": "./dist/core/index.d.mts"
+    },
+    "./utils/crypto": {
+      "import": "./dist/utils/crypto.mjs",
+      "types": "./dist/utils/crypto.d.mts"
+    }
+  },
+  "scripts": {
+    "build": "tsdown"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.32.1"
+  "license": "MIT",
+  "packageManager": "pnpm@10.32.1",
+  "devDependencies": {
+    "tsdown": "^0.22.1"
+  }
 }

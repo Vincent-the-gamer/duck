@@ -1,3 +1,8 @@
 packages:
   - decoder
+  - encoder
+  - cli
   - webui
+
+onlyBuiltDependencies:
+  - sharp

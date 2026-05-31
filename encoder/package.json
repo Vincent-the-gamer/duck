@@ -1,0 +1,39 @@
+{
+  "name": "encoder",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Encode hidden data into duck images using LSB steganography",
+  "main": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.mts"
+    },
+    "./src/encoder": {
+      "import": "./src/encoder.ts",
+      "types": "./src/encoder.ts"
+    },
+    "./src/lsb-writer": {
+      "import": "./src/lsb-writer.ts",
+      "types": "./src/lsb-writer.ts"
+    },
+    "./src/header-builder": {
+      "import": "./src/header-builder.ts",
+      "types": "./src/header-builder.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsdown"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "packageManager": "pnpm@10.32.1",
+  "devDependencies": {
+    "tsdown": "^0.22.1"
+  },
+  "dependencies": {
+    "decoder": "workspace:*",
+    "sharp": "^0.33.5"
+  }
+}

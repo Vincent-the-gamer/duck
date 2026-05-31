@@ -1,0 +1,31 @@
+{
+  "name": "duck-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CLI tools for duck image encode/decode",
+  "main": "dist/index.mjs",
+  "bin": {
+    "duck": "bin/duck.js"
+  },
+  "scripts": {
+    "tsx": "tsx",
+    "build": "tsdown"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "Vincent-the-gamer",
+  "license": "MIT",
+  "packageManager": "pnpm@10.32.1",
+  "dependencies": {
+    "cac": "^6.7.14",
+    "decoder": "workspace:*",
+    "encoder": "workspace:*",
+    "restore-cursor": "^5.1.0",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "tsdown": "^0.22.1",
+    "tsx": "^4.22.3"
+  }
+}
