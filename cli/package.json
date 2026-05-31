@@ -1,5 +1,5 @@
 {
-  "name": "duck-cli",
+  "name": "@vince-gamer/duck-cli",
   "version": "1.0.0",
   "type": "module",
   "description": "CLI tools for duck image encode/decode",
