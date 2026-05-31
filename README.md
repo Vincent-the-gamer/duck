@@ -25,7 +25,15 @@
 
 ## Usage
 
-Use the web version: https://duck.vince-g.xyz
+### Web Page
+
+https://duck.vince-g.xyz
+
+### CLI
+
+```bash
+npx @vince-gamer/duck-cli -h
+```
 
 ## Preview
 

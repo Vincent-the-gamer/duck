@@ -1,9 +1,9 @@
 {
   "name": "@vince-gamer/duck-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "CLI tools for duck image encode/decode",
-  "main": "dist/index.mjs",
+  "main": "src/index.ts",
   "bin": {
     "duck": "bin/duck-cli.js"
   },
