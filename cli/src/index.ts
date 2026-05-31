@@ -11,7 +11,7 @@ import { encodeAction } from "./encode";
 import { decodeAction } from "./decode";
 import restoreCursor from "restore-cursor";
 
-const cli = cac("duck");
+const cli = cac("duck-cli");
 
 // --- encode subcommand ---
 cli

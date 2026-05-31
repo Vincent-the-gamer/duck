@@ -5,7 +5,7 @@
   "description": "CLI tools for duck image encode/decode",
   "main": "dist/index.mjs",
   "bin": {
-    "duck": "bin/duck.js"
+    "duck": "bin/duck-cli.js"
   },
   "scripts": {
     "tsx": "tsx",
@@ -14,6 +14,17 @@
   "keywords": [
     "cli"
   ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.mjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.mts"
+    }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.com",
+    "access": "public"
+  },
   "author": "Vincent-the-gamer",
   "license": "MIT",
   "packageManager": "pnpm@10.32.1",
