@@ -1,0 +1,2 @@
+# Override root .gitignore which excludes **/dist
+!dist
