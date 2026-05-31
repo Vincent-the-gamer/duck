@@ -1,30 +1,38 @@
-# Duck 🦆
+<div>
+    <h1 align="center">Duck 🦆</h1>
+    <p align="center">
+        <em>
+        LSB Steganography Tool — Hide and extract any file inside adorable duck images.
+        </em>
+    </p>
+    <p align="center">
+      <strong>English</strong> | <a href="./README_zh.md">中文</a>
+    </p>
+</div>
 
-> LSB 隐写术加解密工具 — 在可爱的鸭子图片中隐藏和提取任意文件。
+## Features
 
-## 特性
+- **🔒 Encode** — Hide any file type inside a duck PNG image
+- **🔓 Decode** — Extract hidden original files from duck images
+- **🔐 Password Protection** — Optional XOR + SHA-256 encryption with a 16-byte random salt
+- **📦 Multi-level Embedding** — 3 LSB embedding levels: 2-bit (high quality), 6-bit (balanced), 8-bit (maximum capacity)
+- **📝 Custom Title** — Display custom text on the duck image (up to 30 characters)
+- **🖼️ BinPNG Conversion** — Large files are automatically stored as PNG pixels, bypassing capacity limits
+- **📎 Additional Payload** — Nest extra content (e.g., QR code data) within the hidden data
+- **📂 Batch Decoding** — Decode multiple duck images at once
+- **💻 CLI Tool** — Command-line interface for scripting and automation
+- **🌐 Web Interface** — Browser-based GUI built with Vue 3
 
-- **🔒 编码（Encode）** — 将任意类型文件隐藏到鸭子 PNG 图片中
-- **🔓 解码（Decode）** — 从鸭子图片中提取隐藏的原始文件
-- **🔐 密码加密** — 支持可选的 XOR + SHA-256 密码保护（16 字节随机盐）
-- **📦 多级压缩** — 3 种 LSB 嵌入级别：2-bit（高画质）、6-bit（均衡）、8-bit（最大容量）
-- **📝 自定义标题** — 可在鸭子图片上显示自定义文字（最多 30 字符）
-- **🖼️ BinPNG 转换** — 大文件自动以 PNG 像素格式存储，突破容量限制
-- **📎 附加载荷** — 支持在隐藏数据中嵌套额外内容（如二维码信息）
-- **📂 批量解码** — 一次解码多个鸭子图片
-- **💻 CLI 命令行工具** — 适合脚本和自动化场景
-- **🌐 Web 界面** — 基于 Vue 3 的浏览器端图形界面
+## Usage
 
-## 使用
+Use the web version: https://duck.vince-g.xyz
 
-使用网页版即可：https://duck.vince-g.xyz
-
-## 预览
+## Preview
 
 ![preview1](.github/preview-1.png)
 
 ![preview2](.github/preview-2.png)
 
-## 开源协议
+## License
 
 [MIT License](./LICENSE.md) | Copyright (c) 2026-PRESENT Vincent-the-gamer
