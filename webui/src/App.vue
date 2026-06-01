@@ -44,6 +44,10 @@
         <main class="app-main">
             <router-view />
         </main>
+
+        <footer class="app-footer">
+            <p class="compliance">{{ $t("compliance") }}</p>
+        </footer>
     </div>
 </template>
 
@@ -194,5 +198,19 @@ if (router.currentRoute.value.path === "/") {
 .app-main {
     flex: 1;
     display: flex;
+}
+
+.app-footer {
+    padding: 16px 24px 20px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+.compliance {
+    margin: 0;
+    font-size: 12px;
+    color: var(--sub);
+    line-height: 1.6;
+    max-width: 720px;
+    margin-inline: auto;
 }
 </style>

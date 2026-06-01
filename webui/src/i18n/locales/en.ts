@@ -35,6 +35,7 @@ export default {
     downloadBtn: "Download",
     clearBtn: "Clear",
   },
+  compliance: "This project aims to protect the privacy of personal data. Any use of this project that violates local laws and regulations is prohibited, as is infringing upon the data, copyright, or other rights of others. The developer assumes no responsibility for any losses, liabilities, or legal risks arising from the use of this project; all such responsibility rests solely with the user. By using or deploying this project, you agree to these terms.",
   common: {
     encodeFailed: "Encode failed",
     decodeFailed: "Decode failed",
