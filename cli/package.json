@@ -40,6 +40,8 @@
     "sharp": "^0.33.5"
   },
   "devDependencies": {
+    "duck-decoder": "workspace:*",
+    "duck-encoder": "workspace:*",
     "tsdown": "^0.22.1",
     "tsx": "^4.22.3"
   }

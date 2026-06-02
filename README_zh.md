@@ -32,6 +32,10 @@ https://duck.vince-g.xyz
 
 ```bash
 npx @vince-gamer/duck-cli -h
+
+# 或
+npm i -g @vince-gamer/duck-cli
+duck -h
 ```
 
 ## 预览
