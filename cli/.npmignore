@@ -1,2 +1,6 @@
 # Override root .gitignore which excludes **/dist
 !dist
+
+# Prepublish scripts & backups (not needed in published package)
+scripts/
+*.prepublish-backup

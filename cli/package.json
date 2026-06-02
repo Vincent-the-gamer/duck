@@ -1,19 +1,21 @@
 {
   "name": "@vince-gamer/duck-cli",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "type": "module",
   "description": "CLI tools for duck image encode/decode",
   "files": [
     "bin",
     "dist"
   ],
-  "main": "src/index.ts",
+  "main": "dist/index.mjs",
   "bin": {
     "duck": "bin/duck-cli.js"
   },
   "scripts": {
     "tsx": "tsx",
-    "build": "tsdown"
+    "prepublish": "node scripts/prepublish.js",
+    "postpublish": "node scripts/postpublish.js",
+    "build": "pnpm run prepublish && tsdown"
   },
   "keywords": [
     "cli"
