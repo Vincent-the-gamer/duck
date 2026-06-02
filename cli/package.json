@@ -1,6 +1,6 @@
 {
   "name": "@vince-gamer/duck-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "description": "CLI tools for duck image encode/decode",
   "files": [
@@ -34,12 +34,12 @@
   "packageManager": "pnpm@10.32.1",
   "dependencies": {
     "cac": "^6.7.14",
-    "duck-decoder": "workspace:*",
-    "duck-encoder": "workspace:*",
     "restore-cursor": "^5.1.0",
     "sharp": "^0.33.5"
   },
   "devDependencies": {
+    "duck-decoder": "workspace:*",
+    "duck-encoder": "workspace:*",
     "tsdown": "^0.22.1",
     "tsx": "^4.22.3"
   }
