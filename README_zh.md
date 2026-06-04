@@ -31,9 +31,6 @@ https://duck.vince-g.xyz
 ### 命令行
 
 ```bash
-npx @vince-gamer/duck-cli -h
-
-# 或
 npm i -g @vince-gamer/duck-cli
 duck -h
 ```
