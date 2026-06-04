@@ -35,9 +35,6 @@ https://duck.vince-g.xyz
 ### CLI
 
 ```bash
-npx @vince-gamer/duck-cli -h
-
-# Or
 npm i -g @vince-gamer/duck-cli
 duck -h
 ```
